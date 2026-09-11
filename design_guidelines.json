@@ -1,0 +1,175 @@
+{
+  "theme": "mixed",
+  "theme_description": "Mixed theme combining an ultra-crisp, high-contrast light base (warm stone #F8F9FA, crisp card surfaces, deep slate typography) for portfolio storytelling and philosophy with command-center dark mode sections (deep obsidian #0B0F17, terminal black #07090E, neon status accents #10B981 emerald, #3B82F6 electric cobalt, #F59E0B amber, #EF4444 red) for interactive investigation case studies, Lua code viewers, and real-time support telemetry.",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "link": "#0284C7",
+          "error": "#DC2626",
+          "success": "#16A34A",
+          "warning": "#D97706"
+        }
+      },
+      {
+        "name": "card_light",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "border": "#E2E8F0",
+          "border_hover": "#CBD5E1",
+          "badge_bg": "#F1F5F9",
+          "badge_text": "#334155"
+        }
+      },
+      {
+        "name": "command_center_dark",
+        "kind": "solid",
+        "bg": "#0B0F17",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#F87171",
+          "success": "#34D399",
+          "warning": "#FBBF24",
+          "accent_cyan": "#06B6D4",
+          "border": "#1E293B"
+        }
+      },
+      {
+        "name": "terminal_editor",
+        "kind": "solid",
+        "bg": "#05080E",
+        "on_bg": "#E2E8F0",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "syntax_keyword": "#F43F5E",
+          "syntax_string": "#34D399",
+          "syntax_fn": "#38BDF8",
+          "syntax_comment": "#64748B",
+          "line_highlight": "#1E293B"
+        }
+      },
+      {
+        "name": "nav_glass",
+        "kind": "glass",
+        "contrast_against": "#FFFFFF",
+        "guarantee": "backdrop-blur-xl bg-white/85 border-b border-slate-200/80 shadow-xs",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "link_active": "#0284C7",
+          "status_badge_bg": "#ECFDF5",
+          "status_badge_text": "#065F46"
+        }
+      },
+      {
+        "name": "hero_banner",
+        "kind": "solid",
+        "bg": "#F1F5F9",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "badge_bg": "#E0F2FE",
+          "badge_text": "#0369A1"
+        }
+      }
+    ],
+    "accent": "#0284C7",
+    "on_accent": "#FFFFFF",
+    "status_indicators": {
+      "operational": "#10B981",
+      "investigating": "#F59E0B",
+      "critical_incident": "#EF4444",
+      "monitoring": "#3B82F6"
+    }
+  },
+  "typography": {
+    "font_family_heading": "'Space Grotesk Variable', -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_family_body": "'DM Sans Variable', -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_family_mono": "'JetBrains Mono Variable', 'Geist Mono Variable', monospace",
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "h4": 18,
+      "body": 16,
+      "caption": 14
+    },
+    "font_import_rules": "Import '@fontsource-variable/space-grotesk', '@fontsource-variable/dm-sans', and '@fontsource-variable/jetbrains-mono' in frontend/src/index.css"
+  },
+  "entry_surfaces": {
+    "/": "editorial split hero — left: developer-tier technical support positioning, quick status pulse badge, CTAs, impact stats; right: interactive 9-step problem solving workflow diagram & live simulation status bar"
+  },
+  "image_urls": {
+    "profile": {
+      "url": "https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjB0ZWNoJTIwd29ya3NwYWNlfGVufDB8fHx8MTc4OTEzNDg5N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Professional photo of Shanu Abhishek working at developer command station with dual monitors and technical diagnostics",
+      "category": "hero_and_about"
+    },
+    "workspace_ops": {
+      "url": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjB0ZWNoJTIwd29ya3NwYWNlfGVufDB8fHx8MTc4OTEzNDg5N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Platform Operations / Support Engineering command center setup with code inspection and telemetry",
+      "category": "case_study_background"
+    }
+  },
+  "layouts_and_grids": {
+    "hero_section": "12-column grid: col-span-12 lg:col-span-7 hero copy & quick metrics, col-span-12 lg:col-span-5 interactive 9-step workflow node card with state inspection",
+    "workflow_interactive": "Horizontal/Vertical connected pipeline (Customer Issue -> Triage -> Reproduce -> Investigate -> Root Cause -> Fix -> Validate -> Document -> Prevent Recurrence) with interactive state toggle, step detail panel, simulated log output, and duration estimation",
+    "philosophy_bento": "4-card asymmetric bento grid (2x2 with primary hero card span 2 on medium+), highlighting 1) Root Cause over Patch, 2) Code-Level Triage, 3) High-Empathy Human Translation, 4) Operational Tooling & Automation",
+    "metrics_ticker": "6-card high density metric strip with animated counter hooks (12,000+ Users Supported, 95%+ SLA Adherence, 20-50 Daily Issues Triaged, ~20 Weekly Complex Cases, 50+ Monitored Hosts, 500+ Active Services, 4hrs -> <1min Report Automation)",
+    "investigation_case_study": "Deep dark command-center bento container: 8-step interactive investigation carousel/timeline with simulated logs, HTTP packet inspector, query analyzer, and resolution diff",
+    "lua_code_study": "Split interactive viewer: left: contextual problem breakdown & Siemens Teamcenter architecture; right: styled JetBrains Mono code viewer with clickable interactive lines that reveal architectural annotations & design trade-offs",
+    "automation_case_study": "3-way segmented interactive toggle: [Before: Manual 4h Excel Export] vs [Automation: Python + Cron Pipeline] vs [After: Instantaneous <1min Streamlit/Dashboard]",
+    "monitoring_mockup": "Simulated live Prometheus/Grafana-style observability panel (50+ hosts, 500+ services, CPU/Memory/Latency real-time animated curves, simulated alert firing & auto-triage action)",
+    "projects_section": "2 deep technical project showcases: 1) Travel Integration Backend (with interactive node architecture diagram), 2) Iris ML Classification pipeline with live inference sandbox widget",
+    "skills_ecosystem": "Interactive 6-category filterable cluster without lazy percentage bars: Platform Ops & SRE, Backend & Automation, Database & Systems, Cloud & Infra, Support Tooling & ITSM, Enterprise Software (Teamcenter, CAD, SAP)",
+    "customer_vs_engineering": "Two-sided balance sheet visual with Shanu as the bridge: Left (Customer Voice: Panic, Ambiguity, Urgency, Business Impact) -> Center (The Bridge: Translation, Debugging, SLA Defense) -> Right (Engineering Core: Stacktraces, Commits, SQL Patches, PRs)",
+    "customer_centricity": "Interactive 3-tier translation cards: [1. Raw Technical Root Cause] -> [2. Human Empathy Explanation] -> [3. Actionable Customer Next-Steps & Mitigation]",
+    "knowledge_base_mock": "Interactive searchable KB system with filters (SOP, RCA, Hotfix Guide, Runbook) and preview drawer",
+    "collaboration_flow": "Stepwise swimlane showing Product, Platform Support, Customer Success, and Core Dev alignment",
+    "contact_and_resume": "Command center terminal contact widget with one-click resume PDF download simulation, mailto link, LinkedIn profile trigger, and status uptime banner"
+  },
+  "motion": {
+    "transitions": "Use specific properties: transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease",
+    "libraries": "motion (from 'motion/react') for scroll reveals, stagger containers, step active transitions, and smooth counter interpolation",
+    "scroll_experience": "Lenis smooth scrolling configuration with progress indicator in sticky navbar",
+    "marquee": "Slow editorial ribbon showing technology tags (Teamcenter, PLM, Python, Fastify, Docker, Linux, Bash, PostgreSQL, Redis, Lua, Prometheus, Jira)",
+    "reduced_motion": "Respect prefers-reduced-motion with motion fallback opacity fades"
+  },
+  "accessibility": {
+    "data_testid_convention": "All interactive buttons, tabs, inputs, filters, and cards MUST include data-testid='kebab-case-name'",
+    "contrast_enforcement": "All light surfaces have min 4.5:1 text ratio (Slate-900 on White/Stone); dark surfaces have Slate-100/Slate-200 on #0B0F17 with glowing accent indicators",
+    "keyboard_nav": "Full arrow and tab navigation on 9-step workflow, code viewer lines, and case study steps"
+  },
+  "instructions_to_main_agent": [
+    "Install and setup required font packages: Variable imports for Space Grotesk, DM Sans, JetBrains Mono in frontend/src/index.css.",
+    "Implement the mixed-theme visual hierarchy: Clean, airy, modern light theme for personal introduction, philosophy, metrics, and customer empathy; Rich, dark, command-center aesthetic for the 8-step investigation case study, Lua code viewer, and live monitoring simulator.",
+    "Build interactive components with rich sample datasets reflecting Shanu Abhishek's authentic enterprise experience in Teamcenter PLM support, automation, scripting, and developer collaboration.",
+    "Ensure every interactive element has a dedicated data-testid attribute for automated testing.",
+    "Ensure all mockups are clearly marked with subtle 'Portfolio Demonstration' or 'Simulation' badges to establish high credibility.",
+    "Include a functional resume download trigger (generating or linking to a styled PDF resume view) and quick copy email/mailto action."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky navs and command HUDs.",
+    "You MUST NOT apply universal transition (e.g. transition: all). This breaks transforms. Always add transitions for specific interactive elements like button, input.",
+    "You MUST NOT center align the app container. This disrupts human natural reading flow.",
+    "Always use modern button styles with hover states, active states, and focus rings.",
+    "NEVER use generic AI emoji icons (🤖🧠💭💡🔮🎯). Use Lucide icons or Simple Icons.",
+    "Every interaction needs micro-animations - hover states, transitions, step clicks, and entrance reveals.",
+    "Use generous spacing (p-6, p-8, p-12, py-20, py-28) to give content room to breathe."
+  ]
+}
