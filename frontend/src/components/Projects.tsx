@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowDown, Flower2, Network } from "lucide-react";
+import { ArrowDown, Flower2, Network, Workflow } from "lucide-react";
 import { Reveal, SectionHead } from "@/components/Section";
 
 const ARCH = [
@@ -147,6 +147,51 @@ export function Projects() {
                     {t}
                   </span>
                 ))}
+              </div>
+            </article>
+          </Reveal>
+
+          <Reveal delay={0.18} className="lg:col-span-12">
+            <article
+              data-testid="project-kalinga-warriors"
+              className="rounded-2xl border border-slate-200 bg-slate-900 p-7 text-white transition-colors duration-300 hover:border-sky-400 sm:p-9"
+            >
+              <div className="flex items-center gap-3">
+                <span className="grid h-11 w-11 place-items-center rounded-xl bg-sky-400 text-slate-950">
+                  <Workflow className="h-5 w-5" />
+                </span>
+                <div>
+                  <h3 className="font-heading text-2xl font-semibold">
+                    Kalinga Warriors Management Platform
+                  </h3>
+                  <p className="font-mono text-[11px] tracking-[0.15em] text-slate-400 uppercase">
+                    PostgreSQL · Supabase · REST APIs · State Machines
+                  </p>
+                </div>
+              </div>
+              <div className="mt-7 grid gap-8 md:grid-cols-2">
+                <p className="max-w-2xl text-[15px] leading-relaxed text-slate-300">
+                  A multi-user booking platform designed around a relational PostgreSQL data
+                  model, temporal scheduling, and reliable transaction handling.
+                </p>
+                <div>
+                  <p className="font-mono text-[10px] tracking-[0.25em] text-slate-500 uppercase">
+                    Engineering highlights
+                  </p>
+                  <ul className="mt-4 space-y-3.5">
+                    {[
+                      "Structured complex user and scheduling data through Supabase",
+                      "Engineered REST APIs for platform workflows",
+                      "Used strict state-machine workflows to maintain state consistency",
+                      "Resolved concurrency and prevented booking conflicts",
+                    ].map((point) => (
+                      <li key={point} className="flex gap-3 text-[14.5px] leading-relaxed text-slate-300">
+                        <span className="mt-2.5 h-1 w-1 shrink-0 rounded-full bg-sky-400" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </article>
           </Reveal>
